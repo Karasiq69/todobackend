@@ -25,7 +25,7 @@ RUN pip install -r requirements.txt
 
 COPY . .
 COPY .env .env
-RUN python manage.py collectstatic --noinput
+RUN #python manage.py collectstatic --noinput
 
 # Expose the port the app runs on
 EXPOSE 8000
